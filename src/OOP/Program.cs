@@ -37,7 +37,7 @@ class Program
         htl.name = "HTL Braunau";// member variable setzen 
         htl.anzahl_schueler = 1000;
         htl.anzahl_lehrer = 200;
-        htl.anzahl_personen;
+        htl.anzahl_personen();
         Console.WriteLine($"Es besuchen {htl.anzahl_personen()} Personen die {htl.name}");
 
 
