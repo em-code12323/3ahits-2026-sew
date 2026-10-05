@@ -51,9 +51,21 @@ class Rechteck
         return A / B;
 
     }
-    public void setmaxside(double C)
+    public void setmaxside(double C, double ratio)
     {
-        
+        if (A < B)
+        {
+            B=C;
+            // C*Ratio
+            A=C*ratio;
+
+        }
+        else if(B<A)
+        {
+            A=C;
+            B=C*ratio;
+
+        }
     }
 
 
@@ -73,6 +85,8 @@ class Program
         RE.inflate(50);
         Console.WriteLine(RE);
           Console.WriteLine(RE.Aspect_Ratio());
+          RE.setmaxside(RE.Aspect_Ratio);
+          
           
           
 
